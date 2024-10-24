@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    display: flex;
+    background: black;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    z-index: 100;
+}  
+.logo{
+    width: 160px;
+    transform: translateX(-50px);
+}
+.navber a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 35px;
+    transition: 0.3s ease;
+    border-bottom: 4px solid transparent;
+    
+
+    
+}
+.navber a:hover, .navber a :active{
+     color: purple;
+     border-bottom: 3px solid purple;
+    
+
+}
+.content{
+    padding: 10px 28px;
+    transform: translateX(150px);
+    background-color: purple;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.content:hover{
+    background-color: white;
+    box-shadow: 0 0 30px purple;
+    color: purple;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: 7em;
+    border-color: purple;
+    align-items: center;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+    color: purple;
+}
+.home-content h3{
+     font-size: 50px;
+     transform: translateY(180px);
+}
+.home-content h1{
+    font-size: 40px;
+    line-height: 1.2;
+    transform: translateY(180px);
+
+}
+.home-content h5{
+    font-size: 25px;
+    margin: 25px 0 30px;
+    transform: translateY(170px);
+
+
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    transform: translateY(165px);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: purple;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 15px;
+}
+.btn-1:hover{
+    background-color: white;
+    color: purple;
+    border: 5px solid black;
+
+}
+.btn-2{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+    transform: translateY(165px);
+    border-radius: 15px;
+}
+.btn-2:hover{
+    background-color: white;
+    color: black;
+    border: 5px solid purple;
+}
+.img-box{
+    transform: translateX(600px);
+
+}
+.img-box img{
+    border-radius: 30%;
+    width: 450px;
+    transform: translateY(-185px);
+    border: 10px solid black;
+    box-shadow: 0 0 20px purple;
+    transition: 0.5s;
+}
+.img-box img:hover{
+    border: 10px solid purple;
+    box-shadow: 0 0 20px black;
+}
+::-webkit-scrollbar{
+     width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: purple;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 20px;
+}
+.about{
+    display: flex;
+    gap: 10em;
+    padding: 12% 8%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.about-img img{
+    position: relative;
+    width: 500px;
+    box-shadow: 0 0 25px white;
+    border-radius: 20%;
+    border: 10px solid purple;
+    transform: translateY(-100px);
+    transition: 0.3s ease;
+}
+.about-img img:hover{
+     border: 10px solid white;
+     box-shadow: 0 0 20px purple;
+
+}
+.about-content h2{
+    text-align: left;
+    color: purple;
+    font-size: 100px;
+    font-family: monospace;
+    transform: translateY(-100px);
+
+}
+.about-content span{
+    color: white;
+}
+.about-content h3{
+    font-size: 35px;
+    color: purple;
+    transform: translateY(-100px);
+
+
+}
+.about-content p{
+     font-size: 25px;
+     color: white;
+     transform: translateY(-80px);
+    
+}
+.about-content a{
+    padding: 10px 28px;
+    background-color: purple;
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.about-content a:hover{
+    background-color: white;
+    box-shadow: 0 0 30px purple;
+    color: purple;
+}
+.con-form  h2{
+   color: black;
+   font-size: 36px;
+   text-align: center;
+   margin-top: 3em;
+   margin-bottom: 1em;
+
+}
+.con-form form{
+    max-width: 50em;
+    margin: 1em auto;
+   text-align: center;
+   margin-bottom: 3em;
+}
+.con-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.con-form form .input-box input, .con-form form textarea{
+    width: 80%;
+    padding: 1.5em;
+    font-size: 15px;
+    color: white;
+    background: black;
+    margin: 1rem 0;
+    border-radius: .8rem;
+    resize: none;
+}
+.con-form .btn-2{
+    transform: translateY(30px);
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 30%;
+}
+.social a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.social a :hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 10%;
+}
+.social a :hover i{
+    color: white;
+    transition: 0.9s ease;
+}
+.list{
+    margin: 30px 0;
+}
+.list ul{
+    display: flex;
+    justify-content: center;
+}
+.list ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+}
+.list ul li a:hover{
+    opacity: 3;
+}
+.copy-right{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
